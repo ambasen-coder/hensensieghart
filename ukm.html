@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Mousse | Premium Mousse Cake</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.6;
+      background: #fffaf7;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(rgba(40, 25, 20, 0.45), rgba(40, 25, 20, 0.55)),
+                  url('https://cdn.phototourl.com/member/2026-09-30-62d003d7-f8e9-4114-9dd5-cc2549e07483.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px 100px;
+    }
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 520px;
+      margin: 0 auto 35px;
+      opacity: 0.95;
+    }
+    .btn {
+      display: inline-block;
+      background: #c17f59;
+      color: white;
+      padding: 15px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 20px rgba(193, 127, 89, 0.35);
+    }
+    .btn:hover {
+      background: #a66b48;
+      transform: translateY(-3px);
+    }
+
+    /* ===== SECTION UMUM ===== */
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2.1rem;
+      color: #3a2f2a;
+      margin-bottom: 12px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #7a6a60;
+      margin-bottom: 50px;
+      font-size: 1.1rem;
+    }
+
+    /* ===== KEUNGGULAN ===== */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 28px;
+    }
+    .feature {
+      background: white;
+      padding: 32px 24px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    }
+    .feature .icon {
+      font-size: 2.4rem;
+      margin-bottom: 14px;
+    }
+    .feature h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      color: #c17f59;
+    }
+
+    /* ===== PRODUK ===== */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+    .product {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+      transition: transform 0.3s;
+    }
+    .product:hover { transform: translateY(-6px); }
+    .product img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 22px;
+    }
+    .product-info h3 {
+      font-size: 1.25rem;
+      margin-bottom: 6px;
+    }
+    .product-info p {
+      color: #7a6a60;
+      font-size: 0.95rem;
+      margin-bottom: 14px;
+    }
+    .price {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #c17f59;
+    }
+
+    /* ===== TESTIMONI ===== */
+    .testimonials {
+      background: #f8f1eb;
+      padding: 80px 20px;
+    }
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .testi {
+      background: white;
+      padding: 28px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    }
+    .testi p {
+      font-style: italic;
+      margin-bottom: 16px;
+      color: #555;
+    }
+    .testi strong {
+      color: #c17f59;
+    }
+
+    /* ===== CTA ===== */
+    .cta {
+      background: linear-gradient(135deg, #3a2f2a, #5c4338);
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+    }
+    .cta h2 {
+      color: white;
+      margin-bottom: 12px;
+    }
+    .cta p {
+      opacity: 0.9;
+      margin-bottom: 30px;
+      font-size: 1.15rem;
+    }
+    .cta .btn {
+      background: #c17f59;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #2a211c;
+      color: #b8a99e;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.95rem;
+    }
+    footer a {
+      color: #c17f59;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Motea</h1>
+    <p>Kue mousse lembut, kaya rasa, dibuat fresh setiap hari dengan bahan pilihan terbaik.</p>
+    <a href="#order" class="btn">Pesan Sekarang</a>
+  </section>
+
+  <!-- KEUNGGULAN -->
+  <section>
+    <h2>Kenapa Motea?</h2>
+    <p class="subtitle">Setiap gigitan dibuat dengan penuh perhatian</p>
+    <div class="features">
+      <div class="feature">
+        <div class="icon">🍫</div>
+        <h3>Bahan Premium</h3>
+        <p>Menggunakan Belgian chocolate, matcha Jepang, dan buah segar pilihan.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">☁️</div>
+        <h3>Tekstur Soft</h3>
+        <p>Mousse yang ringan di mulut, tidak terlalu manis, cocok untuk segala acara.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🎂</div>
+        <h3>Custom Order</h3>
+        <p>Bisa request rasa, ukuran, dan dekorasi sesuai keinginanmu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUK UNGGULAN -->
+  <section>
+    <h2>Menu Favorit</h2>
+    <p class="subtitle">Pilihan rasa yang paling digemari pelanggan</p>
+    <div class="products">
+      <div class="product">
+        <img src="https://cdn.phototourl.com/member/2026-09-30-86459835-3040-43cf-97c2-723662f72fe0.jpg" alt="Pink Bow">
+        <div class="product-info">
+          <h3>PInk Bow</h3>
+          <p>Mousse cokelat hitam pekat dengan lapisan ganache lembut.</p>
+          <div class="price">Rp 1.000.000</div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://cdn.phototourl.com/member/2026-09-30-37715755-7979-4d2c-8d95-251d0154362c.jpg" alt="Bunny Cake">
+        <div class="product-info">
+          <h3>Chamomile Sweet Bunny Cake</h3>
+          <p>Segar dengan pure strawberry asli dan whipped cream ringan.</p>
+          <div class="price">Rp 1.000.000</div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://cdn.phototourl.com/member/2026-09-30-34d1baea-3b1c-4a33-b94d-b849d4337ab8.jpg" alt="Matcha Mousse">
+        <div class="product-info">
+          <h3>Sweet Drip </h3>
+          <p>Matcha Jepang grade A bertemu white chocolate creamy.</p>
+          <div class="price">Rp 1.000.0000</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <div class="testimonials">
+    <h2>Apa Kata Mereka?</h2>
+    <p class="subtitle" style="margin-bottom: 40px;">Ribuan pelanggan sudah merasakan kelembutannya</p>
+    <div class="testi-grid">
+      <div class="testi">
+        <p>"Enak banget kata gw mah!."</p>
+        <strong>— Leon Senn Kennedy, Desa Valdelobos</strong>
+      </div>
+      <div class="testi">
+        <p>"Enak banget Anjing."</p>
+        <strong>— Reza Auditore, Bandung</strong>
+      </div>
+      <div class="testi">
+        <p>"Ada yang berwarna hitam loh ya. Ambarecommended banget!"</p>
+        <strong>— Dreamybull, Ngawi</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta" id="order">
+    <h2>Siap Manjakan Lidah?</h2>
+    <p>Pesan sekarang dan dapatkan free box premium untuk setiap pembelian.</p>
+    <a href="https://wa.me/6282251463897?text=Halo%20Velvet%20Mousse,%20saya%20mau%20pesan%20mousse%20cake" class="btn">
+      Chat WhatsApp
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Velvet Mousse · Homemade Premium Mousse Cake</p>
+    <p style="margin-top: 8px;">
+      WhatsApp: 082251463897 · Instagram: <a href="#">@hensens454</a>
+    </p>
+  </footer>
+
+</body>
+</html>
